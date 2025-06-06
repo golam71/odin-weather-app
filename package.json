@@ -1,0 +1,24 @@
+{
+  "name": "odin-weather-app",
+  "version": "1.0.0",
+  "description": "A weather app ",
+  "homepage": "https://github.com/golam71/odin-weather-app#readme",
+  "bugs": {
+    "url": "https://github.com/golam71/odin-weather-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/golam71/odin-weather-app.git"
+  },
+  "license": "ISC",
+  "author": "golam71",
+  "type": "esm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  }
+}
