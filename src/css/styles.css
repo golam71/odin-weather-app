@@ -1,11 +1,60 @@
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 1rem;
-  background: #f0f0f0;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
 }
 
-h1 {
-  color: #333;
+.card {
+  border: 2px solid;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
+.card img {
+  align-self: start;
+}
+
+.card:first-child {
+  background-color: black;
+  color: white;
+  & img {
+    filter: invert(1);
+  }
+}
+
+/* img[src*="cloudy.svg"],
+img[src*="partly-cloudy-day.svg"] {
+  height: 34px;
+  padding: 7px 0px;
+} */
+
+div.input,
+p {
+  display: flex;
+  padding: 0px 5px;
+}
+
+.input {
+  display: flex;
+  gap: 5px;
+}
+
+.input * {
+  padding: 7px 10px;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+input,
+button {
+  border: 1px solid black;
+  outline: 1px solid;
+}
+
+b,
+strong {
+  margin-right: 5px;
+}
