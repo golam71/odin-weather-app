@@ -2,6 +2,7 @@ import "./css/styles.css";
 import { getData } from "./javascript/data.js";
 import { addCard } from "./javascript/card.js";
 import { loadBackground } from "./javascript/loadbg.js";
+import { ToggleUnits } from "./javascript/nonFreedomUnits.js";
 
 async function showData(cityName) {
   try {
@@ -31,8 +32,12 @@ async function showData(cityName) {
 }
 
 await showData("Amazon");
+ToggleUnits();
 
 document.getElementById("submit").addEventListener("click", async function () {
   const inputValue = document.querySelector("input").value || "Tokyo";
   await showData(inputValue);
+  ToggleUnits();
 });
+
+document.getElementById("unit").addEventListener("click", ToggleUnits);
