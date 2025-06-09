@@ -26,7 +26,7 @@ async function showData(cityName) {
     }
   } catch (error) {
     alert("Something went wrong, try again.");
-    await showData("Amazon");
+    // await showData("Amazon");
   }
 }
 
