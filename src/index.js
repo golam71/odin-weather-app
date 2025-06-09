@@ -25,7 +25,7 @@ async function showData(cityName) {
   }
 }
 
-await showData("Dhaka");
+await showData("hokaido");
 
 document.getElementById("submit").addEventListener("click", async function () {
   const inputValue = document.querySelector("input").value || "Tokyo";
