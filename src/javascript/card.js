@@ -12,7 +12,7 @@ export function addCard({
   card.className = "card";
 
   const img = document.createElement("img");
-  img.src = `/public/icones-monoschrome/${icon}.svg`;
+  img.src = `./public/icones-monoschrome/${icon}.svg`;
   img.height = 50;
   img.alt = icon;
   img.className = "icon";
