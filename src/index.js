@@ -8,8 +8,7 @@ async function showData(cityName) {
 
   document.getElementById("location").innerText = json.resolvedAddress;
   document.getElementById("description").innerHTML = json.description;
-  // console.log(json.days);
-  // loadBackground(json.resolvedAddress + " " + json.description + "Dark");
+  loadBackground(json.resolvedAddress + " " + json.description);
 
   const cards = document.getElementsByClassName("cards")[0];
   cards.innerHTML = "";
